@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -80,7 +84,6 @@ p {
   background-color: #c7b06e;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-bottom: solid rgba(48, 49, 0, 0.486) 2px;
-
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -159,7 +162,8 @@ p {
   border: 0;
   height: 1px;
   background: #777;
-  margin: 0 50px;
+  margin: 20px auto;
+  max-width: 1200px;
 }
 
 /* Footer */
@@ -204,7 +208,9 @@ p {
   border-radius: 50%;
   text-decoration: none;
   font-size: 18px;
-  transition: transform 0.2s, background-color 0.2s;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -216,6 +222,11 @@ p {
 /* Reszponzivitás */
 
 @media (max-width: 768px) {
+  .navbar {
+    position: relative;
+    top: auto;
+  }
+
   .content-section {
     padding: 20px;
   }
